@@ -2,11 +2,12 @@ import React, { useState, useEffect, useRef } from 'react'
 
 export default function Flashcard({ flashcard }) {
   const [flip, setFlip] = useState(false)
-  const [height, setHeight] = useState('initial')
-
-  height = 0
+  let [height, setHeight] = useState('initial')
+  
+  
   const frontEl = useRef()
   const backEl = useRef()
+  console.log(height) 
 
   function setMaxHeight() {
     const frontHeight = frontEl.current.getBoundingClientRect().height
