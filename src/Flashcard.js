@@ -4,6 +4,7 @@ export default function Flashcard({ flashcard }) {
   const [flip, setFlip] = useState(false)
   const [height, setHeight] = useState('initial')
 
+  height = 0
   const frontEl = useRef()
   const backEl = useRef()
 
